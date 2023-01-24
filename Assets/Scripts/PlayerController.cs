@@ -27,36 +27,36 @@ public class PlayerController : MonoBehaviour
     public int getResult(){
         for(int i = 0; i < 3; i++){
             if(occupied[i, 0] == 0 && occupied[i, 1] == 0 && occupied[i, 2] == 0){
-                result.text = "Playe 2 Won";
+                result.text = "Player 2 Won";
                 return 0;
             }
             if(occupied[i, 0] == 1 && occupied[i, 1] == 1 && occupied[i, 2] == 1){
-                result.text = "Playe 1 Won";
+                result.text = "Player 1 Won";
                 return 1;
             }
             if(occupied[0, i] == 0 && occupied[1, i] == 0 && occupied[2, i] == 0){
-                result.text = "Playe 2 Won";
+                result.text = "Player 2 Won";
                 return 0;
             }
             if(occupied[0, i] == 1 && occupied[1, i] == 1 && occupied[2, i] == 1){
-                result.text = "Playe 1 Won";
+                result.text = "Player 1 Won";
                 return 1;
             }
         }
         if(occupied[0, 0] == 0 && occupied[1, 1] == 0 && occupied[2, 2] == 0){
-            result.text = "Playe 2 Won";
+            result.text = "Player 2 Won";
             return 0;
         }
         if(occupied[0, 0] == 1 && occupied[1, 1] == 1 && occupied[2, 2] == 1){
-            result.text = "Playe 1 Won";
+            result.text = "Player 1 Won";
             return 1;
         }
         if(occupied[2, 0] == 0 && occupied[1, 1] == 0 && occupied[0, 2] == 0){
-            result.text = "Playe 2 Won";
+            result.text = "Player 2 Won";
             return 0;
         }
         if(occupied[2, 0] == 1 && occupied[1, 1] == 1 && occupied[0, 2] == 1){
-            result.text = "Playe 1 (X) Won";
+            result.text = "Player 1 (X) Won";
             return 1;
         }
         if(moves == 9){
